@@ -10,13 +10,9 @@ Implements product listing, product detail, shopping cart and checkout flow. Use
 **Live site:** (automatic deploy via Netlify / Vercel)  
 If the live site link is unavailable, use the demo video below.
 
-### ▶ Watch demo (hosted)
+### ▶ Watch demo
 
-<!-- Replace the `YOUTUBE_VIDEO_ID` below with your actual YouTube ID -->
-<figure>
-  <iframe width="100%" height="420" src="https://www.youtube.com/watch?v=jfzrWuZPy_U" title="MyShop demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <figcaption>Demo: homepage → product → add to cart → checkout</figcaption>
-</figure>
+[![Watch the demo on YouTube](https://img.youtube.com/vi/jfzrWuZPy_U/hqdefault.jpg)](https://www.youtube.com/watch?v=jfzrWuZPy_U)
 
 ## Project Requirements Implemented
 
