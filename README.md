@@ -7,8 +7,7 @@ Implements product listing, product detail, shopping cart and checkout flow. Use
 
 ## Demo
 
-**Live site:** (automatic deploy via Netlify / Vercel)  
-If the live site link is unavailable, use the demo video below.
+**Live site:** [https://incredible-marshmallow-734e85.netlify.app/](https://incredible-marshmallow-734e85.netlify.app/) (automatic deploy via Netlify / Vercel)
 
 ### ▶ Watch demo
 
