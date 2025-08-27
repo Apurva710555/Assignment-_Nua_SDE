@@ -74,7 +74,7 @@ export default function CheckoutPage() {
             <strong>Order ID:</strong> {orderId}
           </p>
           <p>
-            We've sent a confirmation to <strong>{email}</strong> (demo only).
+            We've sent a confirmation to <strong>{email}</strong>
           </p>
           <p>
             <strong>Order total:</strong> Rs.{orderTotal.toFixed(2)}
