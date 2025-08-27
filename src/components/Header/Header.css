@@ -1,0 +1,97 @@
+/* Header.css - styles for Header.jsx */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 68px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Brand / logo */
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.site-header__brand:focus {
+  /* box-shadow: 0 0 0 3px rgba(2, 6, 23, 0.06); */
+  border-radius: 6px;
+}
+
+.site-header__logo {
+  height: 75px;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Actions (cart icon etc.) */
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Cart button */
+.cart-button {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  color: #111;
+}
+
+/* Accessible keyboard focus */
+.cart-button:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.18);
+  border-radius: 6px;
+}
+
+/* SVG icon inherits color */
+.cart-button__icon {
+  color: inherit;
+}
+
+/* Badge */
+.cart-button__badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #ef4444;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 0 5px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Small responsive tweak */
+@media (max-width: 420px) {
+  .site-header__logo {
+    height: 40px;
+  }
+  .site-header {
+    padding: 0 12px;
+  }
+}

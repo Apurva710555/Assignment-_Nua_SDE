@@ -1,10 +1,9 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import CheckoutPage from "./pages/CheckoutPage";
-import CartPage from "./pages/CartPage";
-import ProductDetailPage from "./pages/ProductDetailPage";
-import Header from "./pages/Header";
+import HomePage from "./pages/HomePage/HomePage";
+import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
+import CartPage from "./pages/CartPage/CartPage";
+import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
+import Header from "./components/Header/Header";
 const App = () => {
   return (
     <div>
