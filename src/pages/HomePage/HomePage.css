@@ -48,12 +48,29 @@
   font-size: 0.95rem;
   color: #374151;
   margin-left: 15px;
-  padding: 6px 10px;
+  padding: 6px 36px 6px 10px; /* extra right padding for the custom arrow */
   border: 1px solid #d1d5db;
   border-radius: 6px;
   min-width: 120px;
   background-color: #fff;
-  appearance: none; /* nicer cross-platform */
+
+  /* Use a tiny inline SVG as the arrow so it looks consistent cross-browser */
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9' stroke='%23374751' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+
+  /* hide native arrows but keep consistent appearance across browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  cursor: pointer;
+}
+
+.category-select:focus {
+  outline: 3px solid rgba(59, 130, 246, 0.15);
+  outline-offset: 2px;
 }
 
 .search-input {
