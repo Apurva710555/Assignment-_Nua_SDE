@@ -119,13 +119,11 @@ export default function CheckoutPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className={`checkout-input ${
-                    errors.name ? "checkout-error-input" : ""
+                    erro$name ? "checkout-error-input" : ""
                   }`}
                 />
               </label>
-              {errors.name && (
-                <div className="checkout-error">{errors.name}</div>
-              )}
+              {erro$name && <div className="checkout-error">{erro$name}</div>}
             </div>
 
             <div className="checkout-field">
@@ -136,13 +134,11 @@ export default function CheckoutPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className={`checkout-input ${
-                    errors.email ? "checkout-error-input" : ""
+                    erro$email ? "checkout-error-input" : ""
                   }`}
                 />
               </label>
-              {errors.email && (
-                <div className="checkout-error">{errors.email}</div>
-              )}
+              {erro$email && <div className="checkout-error">{erro$email}</div>}
             </div>
 
             <div className="checkout-field">
@@ -152,12 +148,12 @@ export default function CheckoutPage() {
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                   className={`checkout-input checkout-textarea ${
-                    errors.address ? "checkout-error-input" : ""
+                    erro$address ? "checkout-error-input" : ""
                   }`}
                 />
               </label>
-              {errors.address && (
-                <div className="checkout-error">{errors.address}</div>
+              {erro$address && (
+                <div className="checkout-error">{erro$address}</div>
               )}
             </div>
 
