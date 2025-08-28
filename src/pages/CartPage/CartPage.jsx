@@ -72,7 +72,7 @@ export default function CartPage() {
                   </div>
 
                   <div className="cart-item__meta">
-                    Unit price: Rs.{formatPrice(unitPrice)}
+                    Unit price: ${formatPrice(unitPrice)}
                   </div>
 
                   <div className="cart-item__controls">
@@ -112,7 +112,7 @@ export default function CartPage() {
                 <div className="cart-item__subtotal">
                   <div className="muted small">Subtotal</div>
                   <div className="cart-item__subtotal-value">
-                    Rs.{formatPrice(subtotal)}
+                    ${formatPrice(subtotal)}
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function CartPage() {
         <aside className="cart-summary">
           <div className="summary-row">
             <div className="muted">Subtotal</div>
-            <div className="summary-value">Rs.{formatPrice(grandTotal)}</div>
+            <div className="summary-value">${formatPrice(grandTotal)}</div>
           </div>
 
           <div className="divider" />
@@ -141,7 +141,7 @@ export default function CartPage() {
 
           <div className="summary-row grand">
             <div className="grand-label">Grand total</div>
-            <div className="grand-value">Rs.{formatPrice(grandTotal)}</div>
+            <div className="grand-value">${formatPrice(grandTotal)}</div>
           </div>
 
           <div className="summary-actions">

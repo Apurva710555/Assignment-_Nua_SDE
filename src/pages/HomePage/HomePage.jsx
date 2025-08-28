@@ -101,7 +101,7 @@ const HomePage = () => {
                 <h2 className="product-title">{p.title}</h2>
               </Link>
 
-              <p className="product-price">Rs.{p.price}</p>
+              <p className="product-price">${p.price}</p>
             </div>
           ))}
         </div>
