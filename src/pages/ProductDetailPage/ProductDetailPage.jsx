@@ -86,7 +86,7 @@ function ProductDetailPage() {
 
           <p className="pd-description">{product.description}</p>
 
-          <p className="pd-price">Rs.{product.price}</p>
+          <p className="pd-price">${product.price}</p>
 
           <div className="pd-qty-row">
             <label className="pd-qty-label" htmlFor="qty-select">

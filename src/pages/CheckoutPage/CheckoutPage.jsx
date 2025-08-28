@@ -77,7 +77,7 @@ export default function CheckoutPage() {
             We've sent a confirmation to <strong>{email}</strong>
           </p>
           <p>
-            <strong>Order total:</strong> Rs.{orderTotal.toFixed(2)}
+            <strong>Order total:</strong> ${orderTotal.toFixed(2)}
           </p>
 
           <div className="checkout-buttons">
@@ -119,13 +119,11 @@ export default function CheckoutPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className={`checkout-input ${
-                    errors.name ? "checkout-error-input" : ""
+                    erro$name ? "checkout-error-input" : ""
                   }`}
                 />
               </label>
-              {errors.name && (
-                <div className="checkout-error">{errors.name}</div>
-              )}
+              {erro$name && <div className="checkout-error">{erro$name}</div>}
             </div>
 
             <div className="checkout-field">
@@ -136,13 +134,11 @@ export default function CheckoutPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className={`checkout-input ${
-                    errors.email ? "checkout-error-input" : ""
+                    erro$email ? "checkout-error-input" : ""
                   }`}
                 />
               </label>
-              {errors.email && (
-                <div className="checkout-error">{errors.email}</div>
-              )}
+              {erro$email && <div className="checkout-error">{erro$email}</div>}
             </div>
 
             <div className="checkout-field">
@@ -152,12 +148,12 @@ export default function CheckoutPage() {
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                   className={`checkout-input checkout-textarea ${
-                    errors.address ? "checkout-error-input" : ""
+                    erro$address ? "checkout-error-input" : ""
                   }`}
                 />
               </label>
-              {errors.address && (
-                <div className="checkout-error">{errors.address}</div>
+              {erro$address && (
+                <div className="checkout-error">{erro$address}</div>
               )}
             </div>
 
@@ -192,11 +188,11 @@ export default function CheckoutPage() {
                     {it.title}
                   </div>
                   <div className="checkout-item-price">
-                    {it.quantity} × Rs.{Number(it.price || 0).toFixed(2)}
+                    {it.quantity} × ${Number(it.price || 0).toFixed(2)}
                   </div>
                 </div>
                 <div className="checkout-item-subtotal">
-                  Rs.{lineSubtotal(it).toFixed(2)}
+                  ${lineSubtotal(it).toFixed(2)}
                 </div>
               </div>
             ))}
@@ -206,7 +202,7 @@ export default function CheckoutPage() {
 
           <div className="checkout-total">
             <span>Grand total</span>
-            <strong>Rs.{grandTotal.toFixed(2)}</strong>
+            <strong>${grandTotal.toFixed(2)}</strong>
           </div>
 
           <div className="checkout-buttons">
